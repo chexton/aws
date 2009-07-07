@@ -9,12 +9,12 @@ require "net/https"
 require "rexml/document"
 require "time"
 
-ACCESS_KEY_ID = "--- Replace with your access key id ---"
-SECRET_ACCESS_KEY = "--- Replace with your secret access key ---"
+ACCESS_KEY_ID = "AKIAJHGZRLLGTY3RSO6A"
+SECRET_ACCESS_KEY = "0RN5GNgDSOpGt1E4r0xBuqH59j/m6kl4B1dlAcvm"
 
 action = "UrlInfo"
-responseGroup = "Rank"
-url = "yahoo.com"
+responseGroup = "TrafficData"
+url = ARGV[0]
 
 timestamp = ( Time::now ).utc.strftime("%Y-%m-%dT%H:%M:%S.000Z")
 
